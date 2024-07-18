@@ -21,7 +21,7 @@ const UserSchema = mongoose.Schema({
         type: String, 
         required: true
     }
-})
+},{timestamps: true})
 
 UserSchema.statics.signup = async function(name, email, password, dob){
     // const {name, email, password, dob} = req.body 
